@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@theme{--font-display:"Bricolage Grotesque",sans-serif;--font-sans:Inter,system-ui,sans-serif;--color-ink:#0b0c12;--color-panel:#151826;--color-reel:#e5233b;--color-violet:#7c5cff}
+body{background:var(--color-ink);color:#eceef5;font-family:var(--font-sans);overflow-x:hidden}
+h1,h2,h3{font-family:var(--font-display)}
+:focus-visible{outline:2px solid #7c5cff;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.skeleton{background:linear-gradient(90deg,#151826,#1e2236,#151826);background-size:200% 100%;animation:sk 1.4s infinite}@keyframes sk{to{background-position:-200% 0}}
+/* Hide scrollbar while keeping scrolling enabled */
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* older Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}
+/* Hide all scrollbars while keeping scrolling enabled */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
